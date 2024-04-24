@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Run app
-      run: dotnet run --project C:\Users\HYV\source\repos\TestGitHubAction\TestGitHubAction.csproj
+      run: dotnet run --project ${{ github.workspace }}/TestGitHubAction/TestGitHubAction.csproj
